@@ -17,7 +17,17 @@
         <input type="text" id="cityInput" placeholder="Enter city name">
         <button id="fetchWeatherButton">Get Weather</button>
         <div id="weatherResults"></div>
+
+        <!-- Button to redirect to About page -->
+        <button id="aboutButton">About This App</button>
     </div>
     <script src="script.js"></script>
+
+    <script>
+        // Add event listener for About button
+        document.getElementById('aboutButton').addEventListener('click', function() {
+            window.location.href = 'about.html'; // Redirect to about.html
+        });
+    </script>
 </body>
 </html>
