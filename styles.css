@@ -1,92 +1,40 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    max-width: 400px;
-    width: 100%;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-input {
-    width: calc(100% - 22px);
+#weatherResults {
+    margin-top: 20px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 16px;
+    background-color: #f9f9f9;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: #007bff;
+#weatherResults h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+button.done, button.delete {
+    background: #28a745; /* Green for Done */
     color: white;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background: #0056b3;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    background-color: #f9f9f9;
-    transition: background 0.2s ease;
-}
-
-li:hover {
-    background-color: #f1f1f1;
-}
-
-.completed {
-    text-decoration: line-through;
-    color: gray;
+    padding: 3px 6px; /* Small size */
+    margin-left: 5px; /* Space between task text and button */
+    font-size: 12px; /* Smaller font size */
 }
 
 button.delete {
-    background: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 5px 10px;
-    margin-left: 10px; /* Space between task text and button */
-    font-size: 14px;
+    background: red; /* Red for Delete */
+}
+
+button.done:hover {
+    background: #218838; /* Darker green on hover */
 }
 
 button.delete:hover {
-    background: darkred;
+    background: darkred; /* Darker red on hover */
+}
+
+li.completed {
+    text-decoration: line-through; /* Strikethrough for completed tasks */
+    color: gray; /* Change color for completed tasks */
 }
