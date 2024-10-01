@@ -1,40 +1,77 @@
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    font-family: 'Arial', sans-serif; /* Change font */
+    color: #333; /* Default text color */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* White text for headers */
+}
+
+input[type="text"] {
+    width: calc(100% - 100px); /* Full width minus button space */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #28a745; /* Default button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 15px; /* Slightly larger padding */
+    font-size: 14px; /* Increase font size */
+    transition: background 0.3s ease; /* Transition effect */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
 #weatherResults {
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
 }
 
 #weatherResults h3 {
     margin: 0;
-    color: #007bff;
+    color: #007bff; /* Bright blue for weather heading */
 }
 
-button.done, button.delete {
+button.done {
     background: #28a745; /* Green for Done */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 3px 6px; /* Small size */
-    margin-left: 5px; /* Space between task text and button */
-    font-size: 12px; /* Smaller font size */
 }
 
 button.delete {
     background: red; /* Red for Delete */
 }
 
+li.completed {
+    text-decoration: line-through; /* Strikethrough for completed tasks */
+    color: gray; /* Change color for completed tasks */
+}
+
+/* Add a colorful hover effect for buttons */
 button.done:hover {
     background: #218838; /* Darker green on hover */
 }
 
 button.delete:hover {
     background: darkred; /* Darker red on hover */
-}
-
-li.completed {
-    text-decoration: line-through; /* Strikethrough for completed tasks */
-    color: gray; /* Change color for completed tasks */
 }
